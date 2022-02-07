@@ -23,8 +23,8 @@ variable aks {
   description = "AKS properties"
   type = map
   default = {
-    resource_group  = "default-value",
-    cluster_name    = "default-value",
+    resource_group  = "k8s-gb",
+    cluster_name    = "k8s-gb,
     node_pool_name  = "agentpool",
     type            = "VirtualMachineScaleSets"
     identity_type   = "SystemAssigned",
@@ -99,7 +99,7 @@ variable "rm-customers-api-deployment" {
 
 variable "proj_id" {
   description = "Identifier postfix for various resources"
-  default = "default-value"
+  default = "gb"
 }
 
 ##############################################################################################################
