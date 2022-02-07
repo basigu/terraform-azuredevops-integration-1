@@ -24,7 +24,7 @@ variable aks {
   type = map
   default = {
     resource_group  = "k8s-gb",
-    cluster_name    = "k8s-gb,
+    cluster_name    = "k8s-gb",
     node_pool_name  = "agentpool",
     type            = "VirtualMachineScaleSets"
     identity_type   = "SystemAssigned",
