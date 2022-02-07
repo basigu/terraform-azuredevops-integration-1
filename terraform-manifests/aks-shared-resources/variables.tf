@@ -15,7 +15,7 @@ variable "environment" {
 }
 variable "log_analytics_workspace_name" {
   description = "Log analytics workspace name"
-  default = "default-value"
+  default = "telemetry-gb"
 }
 
 # refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing 
