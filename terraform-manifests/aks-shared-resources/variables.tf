@@ -25,7 +25,7 @@ variable "log_analytics_workspace_sku" {
 
 variable "application_insights_name" {
   description = "Application insights name"
-  default = "default-value"
+  default = "gbinsight"
 }
 
 variable "resourcegroup_location" {
@@ -39,12 +39,12 @@ variable "resourcegroup_location" {
 
 variable "acr_prefix" {
   description = "ACR name"
-  default = "default-value"
+  default = "gbacr"
 }
 
 variable "proj_id" {
   description = "Identifier postfix for various resources"
-  default = "default-value"
+  default = "gb"
 }
 
 ##############################################################################################################
