@@ -59,7 +59,7 @@ stages:
           - template: azure-pipeline-template.yml
             parameters:
               environment: 'sit'
-              location: 'westus2'
+              location: 'westus3'
               workingDirectory: 'terraform-manifests/aks-cluster'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
               backendAzureRmStorageAccountName: 'terraformstate12'
