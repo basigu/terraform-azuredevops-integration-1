@@ -19,6 +19,10 @@ resource "helm_release" "ingress-nginx" {
         name = "controller.service.externalTrafficPolicy"
         value = "Local"
     }
+    set {
+        name  = "controller.admissionWebhooks.enabled"
+        value = "false"
+    }
 
     depends_on = [azurerm_public_ip.k8s_ip, azurerm_kubernetes_cluster.k8s]
 }
