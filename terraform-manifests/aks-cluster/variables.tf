@@ -63,7 +63,7 @@ variable "aks_location" {
   #default = "westus2"
 
   validation {
-    condition = contains(["westus2", "eastus2"], var.aks_location)
+    condition = contains(["westus2", "westus3", "eastus2"], var.aks_location)
     error_message = "The aks location must be in the list westus2, eastus2."
   }
 }
