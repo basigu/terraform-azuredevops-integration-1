@@ -8,7 +8,7 @@ resource "kubernetes_ingress" "k8s_ingress_rules1" {
     namespace = "rm-apis-ns"
     annotations = {
       "kubernetes.io/ingress.class" = "nginx",
-      "cert-manager.io/cluster-issuer" = "letsencrypt-prod",
+      # "cert-manager.io/cluster-issuer" = "letsencrypt-prod",
       "nginx.ingress.kubernetes.io/rewrite-target"= "/$1"
     }
   }
