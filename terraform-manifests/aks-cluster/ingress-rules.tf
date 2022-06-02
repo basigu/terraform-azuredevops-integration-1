@@ -34,7 +34,7 @@ resource "kubernetes_ingress" "k8s_ingress_rules1" {
 
   depends_on = [
     helm_release.ingress-nginx,
-    helm_release.cert-manager,
-    kubectl_manifest.cluster-issuer
+    # helm_release.cert-manager,
+    # kubectl_manifest.cluster-issuer
   ]
 }
