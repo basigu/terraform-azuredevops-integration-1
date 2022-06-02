@@ -20,8 +20,8 @@ resource "helm_release" "ingress-nginx" {
         value = "Local"
     }
     set {
-        name  = "controller.admissionWebhooks.enabled"
-        value = "false"
+        name  = "cert-manager.io/cluster-issuer"
+        value = "module.cert_manager.cluster_issuer_name"
     }
 
     depends_on = [azurerm_public_ip.k8s_ip, azurerm_kubernetes_cluster.k8s]
